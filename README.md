@@ -13,8 +13,7 @@ Página web para la familia Ositos con Flow en Bigo Live
         body {
             font-family: 'Inter', sans-serif;
             /* Fondo temático de ositos con flow */
-        ![image](https://github.com/user-attachments/assets/de75dbf6-0ecc-484b-880f-cb5710bd9946)
-
+            /* ¡IMPORTANTE! REEMPLAZA ESTA URL CON TU IMAGEN REAL DE FONDO DE ALTA CALIDAD */
             background-image: url('https://placehold.co/1920x1080/FFD1DC/6B46C1?text=Ositos+con+Flow+Background');
             background-size: cover; /* Cubre todo el área */
             background-position: center; /* Centra la imagen de fondo */
@@ -93,7 +92,7 @@ Página web para la familia Ositos con Flow en Bigo Live
                 </div>
                 </div>
             <p class="text-md text-gray-600 mt-6">
-                ¡Mantente atento a nuestras redes sociales para más detalles y confirmaciones!ositos con flow
+                ¡Mantente atento a nuestras redes sociales para más detalles y confirmaciones!
             </p>
         </div>
 
@@ -117,4 +116,128 @@ Página web para la familia Ositos con Flow en Bigo Live
             </a>
         </div>
 
-        <div class="bg-blue-100 rounded-2xl shadow-xl p-8 md:p-12 max-w-4xl w-full text-center mt
+        <div class="bg-blue-100 rounded-2xl shadow-xl p-8 md:p-12 max-w-4xl w-full text-center mt-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-6 leading-tight">
+                <span class="block text-blue-500">¡Interactúa con la Familia!</span>
+                <span class="block text-blue-700 text-2xl md:text-3xl mt-2">Tu voz es importante</span>
+            </h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Queremos que te sientas parte activa de Ositos con Flow. Aquí te decimos cómo puedes interactuar y hacer que tu presencia se sienta:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">En los Streams</h3>
+                    <p class="text-gray-700">Participa en el chat, envía regalos, haz preguntas y comparte tus comentarios. ¡Tu interacción anima a nuestros emisores!</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Grupos de Chat</h3>
+                    <p class="text-gray-700">Únete a nuestros grupos de chat en Bigo Live o en otras plataformas (si las tenemos) para conversar, compartir memes y conocer a otros ositos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Sugerencias y Feedback</h3>
+                    <p class="text-gray-700">¿Tienes ideas para streams, eventos o mejoras? ¡Nos encanta escucharte! Envíanos tus sugerencias a través de nuestros canales oficiales.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Eventos y Retos</h3>
+                    <p class="text-gray-700">Participa en los retos y eventos que organizamos. ¡Es una excelente forma de ganar premios y divertirte con la familia!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-purple-100 rounded-2xl shadow-xl p-8 md:p-12 max-w-4xl w-full text-center mt-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-purple-700 mb-6 leading-tight">
+                <span class="block text-purple-500">Espacio con Flow</span>
+                <span class="block text-purple-700 text-2xl md:text-3xl mt-2">¡Conexión y Comunidad!</span>
+            </h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Este es nuestro rincón especial para relajarnos, conversar y conectar. ¡Siéntete libre de compartir y divertirte!
+            </p>
+
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Chat de la Cueva</h3>
+                <div id="chat-messages" class="text-left">
+                    </div>
+                <input type="text" id="chat-username" placeholder="Tu nombre de osito" class="w-full p-3 rounded-lg border border-gray-300 mb-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                <textarea id="chat-input" class="w-full p-3 rounded-lg border border-gray-300 mb-2 resize-y focus:outline-none focus:ring-2 focus:ring-purple-500" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <button id="send-chat" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    Enviar Mensaje
+                </button>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">¡Conéctate con Nosotros!</h3>
+                <p class="text-gray-700 text-lg mb-6">
+                    Aquí tienes algunas formas de interactuar directamente con la familia Ositos con Flow:
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <button id="copy-family-id" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        Copiar ID de Familia
+                    </button>
+                    <a href="https://www.bigo.tv/" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        Visita Bigo Live
+                    </a>
+                </div>
+                <p id="copy-message" class="text-green-600 mt-4 hidden">¡ID de Familia copiado!</p>
+
+                <div class="mt-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Comparte el Flow</h3>
+                    <div class="flex justify-center gap-4">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=TU_URL_DE_LA_PAGINA" target="_blank" class="bg-blue-700 hover:bg-blue-800 text-white p-3 rounded-full shadow-md transition-colors duration-300">Facebook</a>
+                        <a href="https://twitter.com/intent/tweet?url=TU_URL_DE_LA_PAGINA&text=Únete a la familia Ositos con Flow en Bigo Live!" target="_blank" class="bg-blue-400 hover:bg-blue-500 text-white p-3 rounded-full shadow-md transition-colors duration-300">Twitter</a>
+                        <a href="https://www.instagram.com/" target="_blank" class="bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full shadow-md transition-colors duration-300">Instagram</a>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4">
+                        (Recuerda reemplazar "TU_URL_DE_LA_PAGINA" con la URL real de esta página para compartir correctamente.)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-red-100 rounded-2xl shadow-xl p-8 md:p-12 max-w-4xl w-full text-center mt-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-red-700 mb-6 leading-tight">
+                <span class="block text-red-500">Reglas de la Familia</span>
+                <span class="block text-red-700 text-2xl md:text-3xl mt-2">Convivencia en Armonía</span>
+            </h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Para mantener un ambiente positivo y respetuoso en Ositos con Flow, te pedimos que sigas estas sencillas reglas:
+            </p>
+            <ul class="list-decimal list-inside text-left text-gray-700 text-lg md:text-xl mx-auto max-w-xl mb-8">
+                <li class="mb-2">**Respeto:** Trata a todos los miembros y emisores con respeto, sin importar sus opiniones o diferencias.</li>
+                <li class="mb-2">**No al Odio:** No se tolerará ningún tipo de discurso de odio, acoso o discriminación.</li>
+                <li class="mb-2">**Positivismo:** Fomenta un ambiente positivo y de apoyo. ¡Somos una familia!</li>
+                <li class="mb-2">**Privacidad:** Respeta la privacidad de los demás. No compartas información personal sin consentimiento.</li>
+                <li class="mb-2">**Contenido Apropiado:** Asegúrate de que tu contenido y comentarios sean apropiados para todas las edades.</li>
+                <li class="mb-2">**No Spam:** Evita el spam o la promoción no autorizada de otros canales o productos.</li>
+                <li>**Disfruta:** Lo más importante es que te diviertas y disfrutes siendo parte de Ositos con Flow.</li>
+            </ul>
+            <p class="text-md text-gray-600 mt-6">
+                El incumplimiento de estas reglas puede resultar en la expulsión de la familia.
+            </p>
+        </div>
+
+        <div class="bg-gray-100 rounded-2xl shadow-xl p-8 md:p-12 max-w-4xl w-full text-center mt-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-700 mb-6 leading-tight">
+                <span class="block text-gray-500">Información Importante</span>
+                <span class="block text-gray-700 text-2xl md:text-3xl mt-2">Sobre la Familia y Bigo Live</span>
+            </h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                En Ositos con Flow, nos esforzamos por crear un ambiente seguro y divertido para todos. Aquí algunos puntos clave:
+            </p>
+            <ul class="list-disc list-inside text-left text-gray-700 text-lg md:text-xl mx-auto max-w-xl mb-8">
+                <li class="mb-2">**Sobre la Familia:** Somos una comunidad de apoyo mutuo, dedicada a la diversión y el crecimiento en Bigo Live. Valoramos la amistad, el respeto y la buena onda entre todos nuestros miembros.</li>
+                <li class="mb-2">**Bigo Live:** Es una plataforma global de streaming en vivo. Es importante recordar que, según sus términos de servicio, **Bigo Live está destinado a usuarios mayores de 18 años.** Te pedimos que respetes esta normativa al unirte y participar en nuestra familia.</li>
+                <li>**Privacidad:** Tu privacidad es importante para nosotros. Consulta las políticas de privacidad de Bigo Live para más información sobre el manejo de tus datos.</li>
+            </ul>
+        </div>
+
+        <div class="bg-purple-100 rounded-xl p-6 shadow-inner mt-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-purple-600 mb-4">¿Listo para unirte al Flow?</h2>
+            <p class="text-lg text-gray-800 mb-6">
+                Encuéntranos en Bigo Live buscando "Ositos con Flow" o el ID de nuestra familia. ¡Te esperamos con los brazos abiertos (y las patitas listas para bailar)!
+            </p>
+            <a href="https://www.bigo.tv/" target="_blank" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                ¡Síguenos en Bigo Live!
+            </a>
+        </div>
+
+    </div>
